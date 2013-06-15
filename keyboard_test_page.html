@@ -33,7 +33,6 @@
 <script>
     YUI().use('node', function (Y) {
         document.onkeydown = function(e) {
-            e.stopPropagation();
             e.preventDefault();
             var key = Y.one("#code_" + e.keyCode + ""),
                 keys  = Y.all(".code_" + e.keyCode + "");
