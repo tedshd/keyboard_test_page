@@ -38,6 +38,7 @@
                 keys  = Y.all(".code_" + e.keyCode + "");
             (key) ? key.addClass("keydown") : keys.addClass("keydown");
             console.log("KeyCode :" + e.keyCode);
+            document.querySelector('#key_code').innerHTML = e.keyCode;
         };
         document.onkeyup = function(e) {
             var key = Y.one("#code_" + e.keyCode + ""),
@@ -176,5 +177,9 @@
             <td id="code_110">.</td>
         </tr>
     </table>
+    <div>
+        KeyCode
+        <p id="key_code"></p>
+    <div>
 </body>
 </html>
