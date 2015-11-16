@@ -66,6 +66,7 @@
             dom.className = dom.className.replace(reg, ' ');
         }
     }
+
     var KEY = {
         ansi: [
             {
@@ -102,13 +103,11 @@
         iso: [],
         jis: []
     };
+
     function initANSI () {
-        var ansi = KEY.ansi;
-        var r6 = ['esc', 'F1', 'F2', 'F3', 'F4', 'F5', 'F6', 'F7', 'F8', 'F9', 'F10', 'F11', 'F12', 'Print Screen', 'Scroll Lock', 'Pause Break'],
-            r6KeyCode = ['27_0', '112_0', '113_0', '114_0', '115_0', '116_0', '117_0', '118_0', '119_0', '120_0', '121_0', '122_0', '123_0', '44_0', '145_0', '19_0'],
-            r6Size = ['1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1'];
-        var keyboard = document.createElement('div');
-        var rowCount = [13, 17, 16, 21, 21, 16];
+        var ansi = KEY.ansi,
+            keyboard = document.createElement('div'),
+            rowCount = [13, 17, 16, 21, 21, 16];
         keyboard.setAttribute('class', 'keyboard clearfix');
         for (var i = 6 - 1; i >= 0; i--) {
             var row = document.createElement('div');
@@ -122,6 +121,7 @@
             keyboard.appendChild(row);
         }
         document.getElementById('fixed-tab-1').getElementsByTagName('div')[0].appendChild(keyboard);
+
         var blankDom = [
             document.querySelectorAll('.row-1 div')[11],
             document.querySelectorAll('.row-1 div')[12],
@@ -142,7 +142,9 @@
             blankDom[k].parentNode.insertBefore(blank, blankDom[k].nextSibling);
         }
     }
+
     initANSI();
+
     document.onkeydown = function (e) {
         e.preventDefault();
         // console.log(e);
