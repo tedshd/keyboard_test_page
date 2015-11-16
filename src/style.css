@@ -1,0 +1,129 @@
+@charset "UTF-8";
+/**
+ *
+ * @authors Ted Shiu (tedshd@gmail.com)
+ * @date    2015-11-16 02:01:22
+ * @version $Id$
+ */
+
+:root {
+  --keyCapSize: 56px;
+}
+
+
+/*-- keycaps --*/
+.keycap_1,
+.keycap_1_25,
+.keycap_1_5,
+.keycap_1_75,
+.keycap_2,
+.keycap_2_25,
+.keycap_2_75,
+.keycap_5,
+.keycap_6,
+.keycap_6_25,
+.keycap_6_5,
+.keycap_7 {
+    height: var(--keyCapSize);
+}
+
+.keycap_plus, .keycap_enter {
+    width: calc(var(--keyCapSize) * 1);
+    height: calc(var(--keyCapSize) * 2);
+}
+.keycap_enter_iso {
+}
+.keycap_1 {
+    width: calc(var(--keyCapSize) * 1);
+}
+.keycap_1_25 {
+    width: calc(var(--keyCapSize) * 1.25);
+}
+.keycap_1_5 {
+    width: calc(var(--keyCapSize) * 1.5);
+}
+.keycap_1_75 {
+    width: calc(var(--keyCapSize) * 1.75);
+}
+.keycap_2 {
+    width: calc(var(--keyCapSize) * 2);
+}
+.keycap_2_25 {
+    width: calc(var(--keyCapSize) * 2.25);
+}
+.keycap_2_75 {
+    width: calc(var(--keyCapSize) * 2.75);
+}
+.keycap_5 {
+    width: calc(var(--keyCapSize) * 5);
+}
+.keycap_6 {
+    width: calc(var(--keyCapSize) * 6);
+}
+.keycap_6_25 {
+    width: calc(var(--keyCapSize) * 6.25);
+}
+.keycap_6_5 {
+    width: calc(var(--keyCapSize) * 6.5);
+}
+.keycap_7 {
+    width: calc(var(--keyCapSize) * 7);
+}
+.keycaps {
+    position: relative;
+    float: left;
+    border: solid 7px #ddd;
+    border-right: solid 7px #aaa;
+    border-bottom: solid 7px #aaa;
+    box-sizing: border-box;
+    text-align: center;
+    cursor: pointer;
+    word-break: break-all;
+}
+.highlight {
+    background: #ddd;
+}
+
+.mdl-spinner {
+    margin: 0 auto;
+    display: block;
+}
+
+.keyboard {
+    position: relative;
+}
+.row-0, .row-1, .row-2, .row-3, .row-4, .row-5 {
+    position: absolute;
+    width: 100%;
+    left: 0;
+}
+.row-0 {
+    top: calc(var(--keyCapSize) * 5);
+}
+.row-1 {
+    top: calc(var(--keyCapSize) * 4);
+}
+.row-2 {
+    top: calc(var(--keyCapSize) * 3);
+}
+.row-3 {
+    top: calc(var(--keyCapSize) * 2);
+}
+.row-4 {
+    top: calc(var(--keyCapSize) * 1);
+}
+.row-5 {
+    top: calc(var(--keyCapSize) * 0);
+}
+.blank_1 {
+    position: relative;
+    float: left;
+    width: calc(var(--keyCapSize) * 1);
+    height: calc(var(--keyCapSize) * 1);
+}
+.blank_0_66 {
+    position: relative;
+    float: left;
+    width: calc(var(--keyCapSize) * 0.66);
+    height: calc(var(--keyCapSize) * 1);
+}
