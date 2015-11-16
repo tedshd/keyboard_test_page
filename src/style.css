@@ -77,20 +77,17 @@
     border-bottom: solid 7px #aaa;
     box-sizing: border-box;
     text-align: center;
-    cursor: pointer;
     word-break: break-all;
 }
 .highlight {
     background: #ff8800;
 }
 
-.mdl-spinner {
-    margin: 0 auto;
-    display: block;
-}
-
 .keyboard {
     position: relative;
+    margin: 10px auto;
+    width: calc(var(--keyCapSize) * 22);
+    height: calc(var(--keyCapSize) * 6);
 }
 .row-0, .row-1, .row-2, .row-3, .row-4, .row-5 {
     position: absolute;
