@@ -23,3 +23,7 @@ function removeClass(dom, className) {
         dom.className = dom.className.replace(reg, ' ');
     }
 }
+
+function ua (needle) {
+    return window.navigator.userAgent.toLowerCase().indexOf(needle) !== -1;
+};
